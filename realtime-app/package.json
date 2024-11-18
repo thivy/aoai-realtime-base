@@ -1,0 +1,39 @@
+{
+  "name": "realtime-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@radix-ui/react-slot": "^1.1.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.0.0-alpha.1",
+    "lucide-react": "^0.456.0",
+    "next": "15.0.2",
+    "next-themes": "^0.4.3",
+    "openai-realtime-api": "^1.0.7",
+    "or": "^0.2.0",
+    "react": "19.0.0-rc-e1ef8c95-20241115",
+    "react-dom": "19.0.0-rc-e1ef8c95-20241115",
+    "sonner": "^1.7.0",
+    "tailwind-merge": "^2.5.4",
+    "tailwindcss-animate": "^1.0.7",
+    "three": "^0.170.0",
+    "zustand": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "15.0.2",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "relay",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "node ./dist/index.js",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13.5",
+    "@hono/node-ws": "^1.0.4",
+    "dotenv": "^16.4.5",
+    "hono": "^4.6.9",
+    "openai-realtime-api": "^1.0.7",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "@types/ws": "^8.5.13",
+    "tsx": "^4.7.1",
+    "typescript": "^5.6.3"
+  }
+}

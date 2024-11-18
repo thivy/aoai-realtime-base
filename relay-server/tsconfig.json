@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "strict": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "hono/jsx",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "baseUrl": "."
+  },
+  "include": ["**/*.ts", "**/*.tsx"]
+}
