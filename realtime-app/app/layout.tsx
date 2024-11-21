@@ -1,6 +1,11 @@
+import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/sonner";
 import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+
+import { AppHeader } from "@/features/app-header/app-header";
 import "./globals.css";
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,8 +19,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`antialiased `}>
-        {children} <Toaster />
+      <body
+        className={` ${inter.className} antialiased text-sm relative flex flex-col bg-background`}
+      >
+        <ThemeProvider attribute="class" enableSystem disableTransitionOnChange>
+          <AppHeader />
+          {children} <Toaster />
+        </ThemeProvider>
       </body>
     </html>
   );
