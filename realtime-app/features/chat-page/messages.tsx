@@ -1,6 +1,7 @@
 "use client";
 import { Message } from "ai/react";
 import { Bot, User } from "lucide-react";
+import { ScrollIntoView } from "./scroll-into-view";
 
 interface ChatInputProps {
   messages: Message[];
@@ -19,6 +20,7 @@ export const Messages = (props: ChatInputProps) => {
             <div>{m.content}</div>
           </div>
         ))}
+        <ScrollIntoView />
       </div>
     </div>
   );
