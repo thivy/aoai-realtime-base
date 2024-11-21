@@ -1,5 +1,5 @@
-import { ChatPage } from "@/features/chat-page/chat-page";
+import { HomePage } from "@/features/home/home-page";
 
 export default function Home() {
-  return <ChatPage />;
+  return <HomePage />;
 }
